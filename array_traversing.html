@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA JS</title>
+</head>
+<body>
+    <input type="text" id="element" />
+    <button onclick="getElement()" >Get Element</button>
+    <script>
+        let data=[21,6,80,9,1,98,77,63,41,3];
+        function getElement(){
+            let el=document.getElementById('element').value;
+            console.log(typeof (parseInt(el)));
+            
+            if(el<data.length && typeof (parseInt(el))==="number"){
+                alert(data[el]);
+            }else{
+                alert("Please enter valid input");
+            }
+        }
+        </script>
+</body>
+</html>
