@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Delete</title>
+</head>
+<body>
+    <script>
+        function removeEl(){
+            let data=[23,33,12,99,88,56];
+            console.log(data);
+            let position=document.getElementById("position").value;
+            let pos=parseInt(position);
+            for(let i=pos;i<data.length;i++){
+                data[i]=data[i+1];
+            }
+            data.length=data.length-1;
+            console.log(data);
+        }
+    </script>
+    <input type="text" placeholder="enter position to delete" id="position">
+    <button onclick="removeEl()" >Delete</button>
+</body>
+</html>
