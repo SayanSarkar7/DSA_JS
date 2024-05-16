@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Search</title>
+</head>
+<body>
+    <script>
+        let data=[22,32,4,55,61,99,80];
+        console.log(data);
+        let item =22;
+        let index;
+        for(let i=0;i<data.length;i++){
+            if(data[i]===item){
+                index=i;
+                break;
+            }
+        }
+        console.log("index is: "+index);
+        console.log("index is: "+data.indexOf(item));
+        function searchEl(){
+            let item=document.getElementById('searchEl').value;
+            console.log(typeof data[0]);
+            item=parseInt(item);
+            console.log(typeof item);
+
+
+            console.log("index isaaaaaaaa: "+data.indexOf(22));
+            let aa=data.indexOf(item);
+            if(aa>=0){
+                console.log("index is: "+aa);
+            }else{
+                console.warn("Element is not present");
+            }
+        }
+    </script>
+    <input type="text" placeholder="Enetr search item" id="searchEl">
+    <button onclick="searchEl()">search</button>
+</body>
+</html>
